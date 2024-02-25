@@ -11,10 +11,9 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Home />
-      <About />
+      <Home user={user} />
+      <About bio={user.bio} github={user.links.github} linkedin={user.links.linkedin} />
     </div>
   );
 }
-
-export default App;
+  export default App;
